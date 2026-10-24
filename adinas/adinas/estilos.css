@@ -1,0 +1,18 @@
+.promo-section{
+    background-color: rgb(149, 191, 207);
+    padding: 80px;
+    text-align: center;
+}
+.content-wrapper{
+    max-width: 900%;
+}
+.subtitle{
+    color: rgb(44, 32, 218);
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1{
+    color: rgb(51, 39, 107);
+}
+p
+    color: rgb(0, 0, 0);

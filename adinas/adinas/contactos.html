@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas - Contactos</title>
+    <link rel="stylesheet" href="contactos.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar">
+
+        <!-- TU LOGO -->
+        <a href="index.html" class="logo">
+            <img src="imagen/gclogo%20adinas.png" alt="Logo Adidas">
+        </a>
+
+        <!-- MENÚ -->
+        <nav class="menu">
+            <a href="index.html">Lo Nuevo</a>
+            <a href="hombre.html">Hombre</a>
+            <a href="mujer.html">Mujer</a>
+            <a href="contactos.html" class="activo">Contactos</a>
+            <a href="stories.html">Adidas Stories</a>
+        </nav>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- PORTADA -->
+        <section class="contact-hero">
+            <p class="contact-subtitle">ESTAMOS PARA AYUDARTE</p>
+            <h1>CONTÁCTANOS</h1>
+            <p>
+                ¿Tienes alguna consulta sobre nuestros productos?
+                Estamos aquí para ayudarte a encontrar lo que necesitas.
+            </p>
+        </section>
+
+        <!-- INFORMACIÓN Y FORMULARIO -->
+        <section class="contact-container">
+
+            <!-- INFORMACIÓN DE CONTACTO -->
+            <div class="contact-info">
+                <h2>HABLEMOS</h2>
+
+                <p>
+                    Queremos brindarte la mejor experiencia.
+                    Escríbenos para resolver tus dudas y recibir información.
+                </p>
+
+                <div class="contact-item">
+                    <span>✉</span>
+                    <div>
+                        <h3>Correo electrónico</h3>
+                        <p>Consulta nuestros canales oficiales de atención.</p>
+                        <a href="https://www.adidas.com/" target="_blank"
+                           rel="noopener noreferrer">
+                            Visitar sitio oficial
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span>🌐</span>
+                    <div>
+                        <h3>Página web</h3>
+                        <p>Descubre nuestros productos y novedades.</p>
+                        <a href="https://www.adidas.com/" target="_blank"
+                           rel="noopener noreferrer">
+                            www.adidas.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span>📍</span>
+                    <div>
+                        <h3>Tiendas</h3>
+                        <p>Encuentra información sobre productos y tiendas.</p>
+                        <a href="https://www.adidas.com/" target="_blank"
+                           rel="noopener noreferrer">
+                            Explorar Adidas
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORMULARIO -->
+            <div class="contact-form">
+                <h2>ENVÍANOS UN MENSAJE</h2>
+
+                <form action="#" method="get">
+
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre"
+                           placeholder="Escribe tu nombre" required>
+
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo"
+                           placeholder="ejemplo@correo.com" required>
+
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="productos">Consulta sobre productos</option>
+                        <option value="pedidos">Pedidos y entregas</option>
+                        <option value="cambios">Cambios y devoluciones</option>
+                        <option value="otro">Otro asunto</option>
+                    </select>
+
+                    <label for="mensaje">Tu mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"
+                              placeholder="Escribe tu consulta..."
+                              required></textarea>
+
+                    <button type="submit">ENVIAR MENSAJE →</button>
+
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="contact-footer">
+        <h2>ADIDAS</h2>
+        <p>Impossible Is Nothing</p>
+        <p>© 2026 | Página creada con fines educativos.</p>
+    </footer>
+
+</body>
+</html>

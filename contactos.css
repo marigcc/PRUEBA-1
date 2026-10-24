@@ -1,0 +1,51 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f2f2f2; min-height: 100vh; }
+
+/* LOGO ARRIBA BLANCO CENTRADO - COMO TU FOTO */
+.logo-top {
+    background: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+.logo-top img { height: 65px; }
+
+/* BARRA NEGRA - COMO TU FOTO */
+.navbar {
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 14px 0;
+}
+.menu { display: flex; gap: 30px; }
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+.menu a.activo { font-weight: bold; text-decoration: underline; }
+.menu a:hover { text-decoration: underline; }
+
+/* FORMULARIO */
+.form-card { background: #4a3a36; width: 100%; max-width: 360px; padding: 28px 22px; border-radius: 28px; margin: 40px auto; }
+.form-card h2 { color: white; text-align: center; font-size: 18px; margin-bottom: 10px; }
+.subtitle { color: #e8ddd6; text-align: center; font-size: 11px; line-height: 1.4; margin-bottom: 20px; font-style: italic; }
+.form-card label { color: white; font-size: 12px; font-weight: bold; display: block; margin: 14px 0 6px 5px; }
+.form-card input, .form-card textarea { width: 100%; padding: 10px 14px; border: none; border-radius: 8px; background: white; font-size: 12px; }
+.libro { color: white; text-align: center; font-size: 11px; margin: 18px 0 12px 0; text-decoration: underline; }
+.btn-enviar { display: block; margin: 0 auto; background: #e9e6e1; color: #4a3a36; border: none; padding: 8px 35px; border-radius: 20px; font-weight: bold; cursor: pointer; }
+
+/* FOOTER */
+.footer { background: #8a8a8a; color: #f1ece1; display: flex; gap: 80px; padding: 35px 60px; flex-wrap: wrap; }
+.footer-col h4 { font-size: 11px; margin-bottom: 18px; }
+.footer-col a { display: block; color: #f1ece1; font-size: 12px; text-decoration: underline; margin-bottom: 4px; }
+.social-item { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.social-item i { font-size: 28px; }
+.btn-whatsapp { background: #25d366; color: white !important; padding: 8px 16px; border-radius: 20px; text-decoration: none !important; font-weight: bold; font-size: 12px !important; margin-top: 10px; display: inline-block !important; }
+.email { font-size: 12px; font-weight: bold; text-decoration: underline; margin-bottom: 5px; }
+.horario-titulo { font-size: 10px; font-weight: bold; margin-bottom: 15px; }
+.horario { font-size: 11px; text-decoration: underline; }

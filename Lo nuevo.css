@@ -1,0 +1,372 @@
+
+/* CONFIGURACION GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* MENU PRINCIPAL */
+.encabezado {
+    width: 100%;
+    min-height: 85px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 7%;
+    gap: 25px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo img {
+    width: 65px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #222222;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.activo {
+    color: #777777;
+    border-bottom: 2px solid #111111;
+}
+
+/* BANNER PRINCIPAL */
+.banner {
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    color: #ffffff;
+    background:
+        linear-gradient(90deg, rgba(0,0,0,0.85), rgba(0,0,0,0.15)),
+        url("https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=1800&q=90");
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-contenido {
+    max-width: 580px;
+}
+
+.etiqueta {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 22px;
+}
+
+.banner h1 {
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.02;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.banner-contenido > p:not(.etiqueta) {
+    max-width: 450px;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 16px 28px;
+    background: #ffffff;
+    color: #111111;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: #cccccc;
+    transform: translateY(-2px);
+}
+
+/* CATEGORIAS */
+.categorias {
+    padding: 75px 7%;
+}
+
+.categorias h2,
+.productos h2 {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.descripcion {
+    color: #666666;
+    margin-bottom: 35px;
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.categoria {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    background: #eeeeee;
+}
+
+.categoria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.categoria:hover img {
+    transform: scale(1.06);
+}
+
+.categoria::after {
+    content: "";
+    position: absolute;
+    inset: 40% 0 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+
+.categoria-texto {
+    position: absolute;
+    z-index: 1;
+    bottom: 25px;
+    left: 25px;
+    color: #ffffff;
+}
+
+.categoria-texto h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.categoria-texto span {
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+/* PRODUCTOS DESTACADOS */
+.productos {
+    background: #f5f5f5;
+    padding: 75px 7%;
+}
+
+.productos-titulo {
+    margin-bottom: 35px;
+}
+
+.productos-titulo p {
+    color: #666666;
+    margin-top: 10px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.producto {
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.producto img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.producto:hover img {
+    transform: scale(1.04);
+}
+
+.producto-info {
+    padding: 22px;
+}
+
+.producto-info h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.producto-info p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.producto-info a {
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 2px solid #111111;
+    padding-bottom: 5px;
+}
+
+/* BANNER FINAL */
+.banner-final {
+    min-height: 330px;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #111111;
+    color: #ffffff;
+}
+
+.banner-final h2 {
+    font-size: clamp(30px, 5vw, 50px);
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.banner-final p {
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+.boton-blanco {
+    background: #ffffff;
+    color: #111111;
+}
+
+/* PIE DE PAGINA */
+.footer {
+    padding: 35px 20px;
+    background: #ffffff;
+    text-align: center;
+    color: #666666;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.footer img {
+    width: 45px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer p:first-of-type {
+    font-weight: bold;
+    color: #111111;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .encabezado {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .banner {
+        min-height: 500px;
+        padding: 60px 6%;
+    }
+
+    .categorias-grid,
+    .productos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categoria:last-child,
+    .producto:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    .menu {
+        gap: 12px 18px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .banner {
+        min-height: 460px;
+        padding: 45px 7%;
+    }
+
+    .banner h1 {
+        font-size: 43px;
+    }
+
+    .banner-contenido > p:not(.etiqueta) {
+        font-size: 15px;
+    }
+
+    .categorias,
+    .productos {
+        padding: 50px 6%;
+    }
+
+    .categorias h2,
+    .productos h2 {
+        font-size: 27px;
+    }
+
+    .categorias-grid,
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .categoria,
+    .categoria:last-child,
+    .producto:last-child {
+        grid-column: auto;
+    }
+
+    .categoria {
+        height: 350px;
+    }
+
+    .producto img {
+        height: 280px;
+    }
+}
